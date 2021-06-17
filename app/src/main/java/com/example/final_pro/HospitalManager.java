@@ -28,7 +28,7 @@ public class HospitalManager extends AppCompatActivity {
         ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo;
         networkInfo = connMgr.getActiveNetworkInfo();
-
+        add.setOnClickListener();
     }
     private Button alter;
     private Button add;
