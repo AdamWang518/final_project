@@ -1,23 +1,18 @@
 package com.example.final_pro;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
+
 
 public class HospitalManager extends AppCompatActivity {
     private Button alter;
@@ -34,6 +29,25 @@ public class HospitalManager extends AppCompatActivity {
         add=findViewById(R.id.add_button);
         delete=findViewById(R.id.delete_button);
         add.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String type="H";
+                SharedPreferences pref = getSharedPreferences("type", MODE_PRIVATE);
+                pref.edit()
+                        .putString("H", type)
+                        .commit();
+                Intent intent = new Intent(HospitalManager.this, HospitalAdd.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        alter.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(HospitalManager.this, HospitalAdd.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        delete.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(HospitalManager.this, HospitalAdd.class);
                 startActivity(intent);

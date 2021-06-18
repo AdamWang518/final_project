@@ -12,10 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Final_pro"
         android:usesCleartextTraffic="true">
-        <activity
-            android:name=".MainActivity2"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/Theme.Final_pro.NoActionBar"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,6 +27,7 @@
         <activity android:name=".ReportWriter" />
         <activity android:name=".AfterLogManager" />
         <activity android:name=".HospitalManager" />
+        <activity android:name=".HospitalAdd" />
     </application>
 
 </manifest>
