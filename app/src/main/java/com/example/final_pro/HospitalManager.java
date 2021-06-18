@@ -20,22 +20,27 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class HospitalManager extends AppCompatActivity {
+    private Button alter;
+    private Button add;
+    private Button delete;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hospitalmanager);
-        findViews();
         ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo;
         networkInfo = connMgr.getActiveNetworkInfo();
-        add.setOnClickListener();
+        alter=findViewById(R.id.alter_button);
+        add=findViewById(R.id.add_button);
+        delete=findViewById(R.id.delete_button);
+        add.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(HospitalManager.this, HospitalAdd.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
-    private Button alter;
-    private Button add;
-    private Button delete;
-    private void findViews() {
-        alter = (Button) findViewById(R.id.alter_button);
-        add = (Button) findViewById(R.id.add_button);
-        delete = (Button) findViewById(R.id.delete_button);
-    }
+
+
 }

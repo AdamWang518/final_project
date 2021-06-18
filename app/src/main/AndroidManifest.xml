@@ -30,6 +30,7 @@
         <activity android:name=".Report" />
         <activity android:name=".ReportWriter" />
         <activity android:name=".AfterLogManager" />
+        <activity android:name=".HospitalManager" />
     </application>
 
 </manifest>

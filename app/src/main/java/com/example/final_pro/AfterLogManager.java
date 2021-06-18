@@ -34,6 +34,9 @@ public class AfterLogManager extends AppCompatActivity {
             public void onClick(View v) {
                 if (networkInfo != null && networkInfo.isAvailable()) {
                     //連接線上資料庫並更新
+                    Intent intent = new Intent(AfterLogManager.this, HospitalManager.class);
+                    startActivity(intent);
+                    finish();
                 }
                 else {
                     Toast.makeText(AfterLogManager.this, "請連接網路", Toast.LENGTH_SHORT).show();
