@@ -33,7 +33,7 @@ public class HospitalManager extends AppCompatActivity {
                 String type="H";
                 SharedPreferences pref = getSharedPreferences("type", MODE_PRIVATE);
                 pref.edit()
-                        .putString("H", type)
+                        .putString("type", type)
                         .commit();
                 Intent intent = new Intent(HospitalManager.this, HospitalAdd.class);
                 startActivity(intent);
