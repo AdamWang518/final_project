@@ -196,6 +196,89 @@ public class HospitalAdd extends AppCompatActivity{
             }
         });
         }
+        if(type.equals("E"))
+        {
+            url = "http://192.168.50.36/Loginregister/hospitaladd.php";
+            JSONObject object = new JSONObject();
+            try {
+                object.put("name",name);
+                object.put("city",city);
+                object.put("town",town);
+                object.put("road",road);
+            } catch (JSONException e) {
+                e.printStackTrace();
+                Log.d("HKTJSON",e.getMessage());
+            }
+            sendRequest(url,object,new Response.Listener<JSONObject>() {
+                @Override
+                public void onResponse(JSONObject response) {
+                    Log.d("HKTSUCCESS",response.toString());
+                    Toast.makeText(HospitalAdd.this, "新增成功", Toast.LENGTH_SHORT).show();
+                }
 
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Log.d("HKTERRO",error.getMessage());
+                    Toast.makeText(HospitalAdd.this, "新增失敗", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
+        if(type.equals("F"))
+        {
+            url = "http://192.168.50.36/Loginregister/hospitaladd.php";
+            JSONObject object = new JSONObject();
+            try {
+                object.put("name",name);
+                object.put("city",city);
+                object.put("town",town);
+                object.put("road",road);
+            } catch (JSONException e) {
+                e.printStackTrace();
+                Log.d("HKTJSON",e.getMessage());
+            }
+            sendRequest(url,object,new Response.Listener<JSONObject>() {
+                @Override
+                public void onResponse(JSONObject response) {
+                    Log.d("HKTSUCCESS",response.toString());
+                    Toast.makeText(HospitalAdd.this, "新增成功", Toast.LENGTH_SHORT).show();
+                }
+
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Log.d("HKTERRO",error.getMessage());
+                    Toast.makeText(HospitalAdd.this, "新增失敗", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
+        if(type.equals("P"))
+        {
+            url = "http://192.168.50.36/Loginregister/hospitaladd.php";
+            JSONObject object = new JSONObject();
+            try {
+                object.put("name",name);
+                object.put("city",city);
+                object.put("town",town);
+                object.put("road",road);
+            } catch (JSONException e) {
+                e.printStackTrace();
+                Log.d("HKTJSON",e.getMessage());
+            }
+            sendRequest(url,object,new Response.Listener<JSONObject>() {
+                @Override
+                public void onResponse(JSONObject response) {
+                    Log.d("HKTSUCCESS",response.toString());
+                    Toast.makeText(HospitalAdd.this, "新增成功", Toast.LENGTH_SHORT).show();
+                }
+
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Log.d("HKTERRO",error.getMessage());
+                    Toast.makeText(HospitalAdd.this, "新增失敗", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
     }
 }
