@@ -40,7 +40,7 @@
 
             <TableRow>
                 <EditText
-                    android:id="@+id/road"
+                    android:id="@+id/town"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:hint="鄉鎮"
@@ -51,7 +51,7 @@
             <TableRow>
 
                 <EditText
-                    android:id="@+id/town"
+                    android:id="@+id/road"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:hint="道路門牌"
