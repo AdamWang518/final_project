@@ -27,7 +27,7 @@
         <activity android:name=".ReportWriter" />
         <activity android:name=".AfterLogManager" />
         <activity android:name=".Add"/>
-        <activity android:name=".Manager"/>
+        <activity android:name=".Editor"/>
         <activity android:name=".Choose"/>
     </application>
 

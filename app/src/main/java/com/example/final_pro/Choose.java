@@ -35,7 +35,7 @@ public class Choose extends AppCompatActivity{
                     pref.edit()
                             .putString("type", type)
                             .commit();
-                    Intent intent = new Intent(Choose.this, Manager.class);
+                    Intent intent = new Intent(Choose.this, Editor.class);
                     startActivity(intent);
                     finish();
                 }
@@ -53,7 +53,7 @@ public class Choose extends AppCompatActivity{
                     pref.edit()
                             .putString("type", type)
                             .commit();
-                    Intent intent = new Intent(Choose.this, Manager.class);
+                    Intent intent = new Intent(Choose.this, Editor.class);
                     startActivity(intent);
                     finish();
                 }
@@ -71,7 +71,7 @@ public class Choose extends AppCompatActivity{
                     pref.edit()
                             .putString("type", type)
                             .commit();
-                    Intent intent = new Intent(Choose.this, Manager.class);
+                    Intent intent = new Intent(Choose.this, Editor.class);
                     startActivity(intent);
                     finish();
                 }
@@ -89,7 +89,7 @@ public class Choose extends AppCompatActivity{
                     pref.edit()
                             .putString("type", type)
                             .commit();
-                    Intent intent = new Intent(Choose.this, Manager.class);
+                    Intent intent = new Intent(Choose.this, Editor.class);
                     startActivity(intent);
                     finish();
                 }

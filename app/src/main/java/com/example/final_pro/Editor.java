@@ -1,7 +1,6 @@
 package com.example.final_pro;
 
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -14,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 
-public class Manager extends AppCompatActivity {
+public class Editor extends AppCompatActivity {
     private Button alter;
     private Button add;
     private Button delete;
@@ -31,21 +30,21 @@ public class Manager extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Intent intent = new Intent(Manager.this, Add.class);
+                Intent intent = new Intent(Editor.this, Add.class);
                 startActivity(intent);
                 finish();
             }
         });
         alter.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(Manager.this, Add.class);
+                Intent intent = new Intent(Editor.this, Add.class);
                 startActivity(intent);
                 finish();
             }
         });
         delete.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(Manager.this, Add.class);
+                Intent intent = new Intent(Editor.this, Add.class);
                 startActivity(intent);
                 finish();
             }
