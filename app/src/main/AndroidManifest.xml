@@ -29,7 +29,6 @@
         <activity android:name=".Add"/>
         <activity android:name=".Manager"/>
         <activity android:name=".Choose"/>
-        <activity android:name=".Delete"/>
     </application>
 
 </manifest>
