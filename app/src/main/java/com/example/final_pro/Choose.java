@@ -48,6 +48,11 @@ public class Choose extends AppCompatActivity{
             public void onClick(View v) {
                 if (networkInfo != null && networkInfo.isAvailable()) {
                     //連接線上資料庫並更新
+                    String type="F";
+                    SharedPreferences pref = getSharedPreferences("type", MODE_PRIVATE);
+                    pref.edit()
+                            .putString("type", type)
+                            .commit();
                     Intent intent = new Intent(Choose.this, Manager.class);
                     startActivity(intent);
                     finish();
@@ -61,6 +66,11 @@ public class Choose extends AppCompatActivity{
             public void onClick(View v) {
                 if (networkInfo != null && networkInfo.isAvailable()) {
                     //連接線上資料庫並更新
+                    String type="E";
+                    SharedPreferences pref = getSharedPreferences("type", MODE_PRIVATE);
+                    pref.edit()
+                            .putString("type", type)
+                            .commit();
                     Intent intent = new Intent(Choose.this, Manager.class);
                     startActivity(intent);
                     finish();
@@ -74,6 +84,11 @@ public class Choose extends AppCompatActivity{
             public void onClick(View v) {
                 if (networkInfo != null && networkInfo.isAvailable()) {
                     //連接線上資料庫並更新
+                    String type="P";
+                    SharedPreferences pref = getSharedPreferences("type", MODE_PRIVATE);
+                    pref.edit()
+                            .putString("type", type)
+                            .commit();
                     Intent intent = new Intent(Choose.this, Manager.class);
                     startActivity(intent);
                     finish();

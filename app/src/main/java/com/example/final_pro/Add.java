@@ -184,7 +184,7 @@ public class Add extends AppCompatActivity {
             });
         }
         if (type.equals("E")) {
-            url = "http://192.168.50.36/Loginregister/hospitaladd.php";
+            url = "http://192.168.50.36/Loginregister/emergencyadd.php";
             JSONObject object = new JSONObject();
             try {
                 object.put("name", name);
