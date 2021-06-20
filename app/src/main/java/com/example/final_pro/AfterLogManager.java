@@ -34,7 +34,7 @@ public class AfterLogManager extends AppCompatActivity {
             public void onClick(View v) {
                 if (networkInfo != null && networkInfo.isAvailable()) {
                     //連接線上資料庫並更新
-                    Intent intent = new Intent(AfterLogManager.this, HospitalManager.class);
+                    Intent intent = new Intent(AfterLogManager.this, Choose.class);
                     startActivity(intent);
                     finish();
                 }

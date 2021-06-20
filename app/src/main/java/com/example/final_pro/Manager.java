@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 
-public class HospitalManager extends AppCompatActivity {
+public class Manager extends AppCompatActivity {
     private Button alter;
     private Button add;
     private Button delete;
@@ -30,26 +30,22 @@ public class HospitalManager extends AppCompatActivity {
         delete=findViewById(R.id.delete_button);
         add.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String type="H";
-                SharedPreferences pref = getSharedPreferences("type", MODE_PRIVATE);
-                pref.edit()
-                        .putString("type", type)
-                        .commit();
-                Intent intent = new Intent(HospitalManager.this, HospitalAdd.class);
+
+                Intent intent = new Intent(Manager.this, Add.class);
                 startActivity(intent);
                 finish();
             }
         });
         alter.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(HospitalManager.this, HospitalAdd.class);
+                Intent intent = new Intent(Manager.this, Add.class);
                 startActivity(intent);
                 finish();
             }
         });
         delete.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(HospitalManager.this, HospitalAdd.class);
+                Intent intent = new Intent(Manager.this, Add.class);
                 startActivity(intent);
                 finish();
             }
